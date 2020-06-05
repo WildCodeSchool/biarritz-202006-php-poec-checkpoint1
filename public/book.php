@@ -133,10 +133,7 @@ $persons = $statement->fetchAll();
                         </form>
                         <?php      
                         if(isset($_POST['namePerson'])) { 
-                            if ($_POST['payment'] <= 0){
-                                $error = '';
-
-                            }    
+                             
                             $namePerson = trim($_POST['namePerson']);
                             $payment = $_POST['payment'];
                                                     
