@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <form  action="/formulaire.php"  method="post">
+            <div>
+                <label  for="nom">Nom :</label>
+                <input  type="text"  id="nom"  name="user_name">
+            </div>
+            <div>
+                <label  for="payment">Payment :</label>
+                <input  type="int"  id="payment"  name="user_payment">
+            <div  class="button">
+              <button  type="submit">Pay !</button>
+            </div>
+         </form>
+         <?php
+          if(isset($_POST['valider'])){
+            $nom=$_POST['nom'];
+            $vpayment=$_POST['payment'];
+            echo 'Merci pour le pourboire !';
+        }
+        if($_POST['payment' ===0]){
+            echo "Faut Payer !"
+        }
+        else{
+            echo "J'aime quand tu payes!"
+        }
+         ?>
+    </body>
+</html>
