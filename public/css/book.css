@@ -44,4 +44,73 @@ main {
 .secret-book {
     display: flex;
     flex-direction: row;
+} 
+.rightpage {
+    font-size: 28px;
+}
+.leftpage {
+    font-size: 28px;
+}
+.box-flex {
+        height: 100px;
+        width: 200px;
+    }
+    .box-flex-center {
+        flex-grow: 1;
+    }
+    img.pen-img {
+        height: 300%;            
+    }
+    .glass{
+        margin-left: 20px;
+    }
+    .pen{
+        margin-top:170px;
+    }
+
+@media screen and (width > 1200px) {
+    .box-flex {
+        height: 100px;
+        width: 200px;
+    }
+    .box-flex-center {
+        flex-grow: 1;
+    }
+    img.pen-img {
+        height: 300%;            
+    }
+    .glass{
+        margin-left: 20px;
+    }
+    .pen{
+        margin-top:170px;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .pen {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .pen {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .pen {
+        display:none;
+    }
+    .glass {
+        display:none;
+    }            
+}
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .pen {
+        display:none;
+    }
+    .glass {
+        display:none;
+    }            
 }
